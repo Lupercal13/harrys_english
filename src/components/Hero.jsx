@@ -10,7 +10,8 @@ const Hero = () => {
             <h1 className="text-5xl lg:text-7xl lg:leading-[5rem] leading-tight font-bold pb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700">Harry's English Club</h1>
             <p className="font-semibold tracking-wide text-gray-600 lg:text-lg lg:tracking-wider lg:text-center ">Learning English doesn't have to be difficult. Join us now to get started learning English the fun and effective way!</p>
         <div className="flex w-3/4 items-center mx-auto pt-8">
-            <button className="btn btn-primary  w-full mb-12 text-xl">Learn More</button>
+            <a href="#classes" className="w-full">
+            <button className="btn btn-primary  w-full mb-12 text-xl">Learn More</button></a>
         </div>
         </div>
         <div>
