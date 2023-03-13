@@ -12,12 +12,12 @@ const Footer = () => {
 
       <AiOutlineCopyright size={15}/> Harry's English Club {date}
         </p>
-      <p className='text-xs sm:text-sm text-black flex items-center gap-2'><AiOutlineMail/>hpayne13@gmail.com</p>
+      <a href="mailto:hpayne13.test@gmail.com" className='cursor-pointer hover:scale-[102%] ease'><p className='text-xs sm:text-sm text-black flex items-center gap-2'><AiOutlineMail/>hpayne13.test@gmail.com</p></a>
       <p className='text-xs sm:text-sm text-black flex items-center gap-2'><CiLocationOn size={16}/> Yaotsu, Gifu, Japan</p>
-      <div className='flex gap-2 ml-2'>
-        <AiFillFacebook size={20}/>
-        <AiFillTwitterSquare size={20}/>
-        <AiFillInstagram size={20}/>
+      <div className='flex gap-4 ml-2'>
+        <AiFillFacebook size={20} className='hover:scale-105 cursor-pointer'/>
+        <AiFillTwitterSquare size={20} className='hover:scale-105 cursor-pointer'/>
+        <AiFillInstagram size={20} className='hover:scale-105 cursor-pointer'/>
       </div>
       </div>
     </div>
