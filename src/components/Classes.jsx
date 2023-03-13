@@ -18,19 +18,19 @@ const pictures = [
 const Classes = () => {
   return (
     <div id="classes">
-      <div className="ml-12">
-        <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700 drop-shadow-lg">
+      <div className="ml-12 mt-20">
+        <h1 className="text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700 drop-shadow-lg">
           Classes Available
         </h1>
       </div>
 
-      <div className="mt-20 grid ss:grid-cols-2 font-poppins  ">
+      <div className="mt-20 grid sm:grid-cols-2 font-poppins  ">
         {classes.map((item) => (
-          <div className="card lg:card-side  shadow-xl mb-12 border-2 mx-4 bg-white">
-            <figure className="lg:w-full">
-              <img src={item.image} alt="/" className="h-[200px] lg:h-[225px]" />
+          <div className="card lg:card-side grid sm:grid-cols-2 shadow-xl mb-12 border-2 mx-4 bg-white">
+            <figure className="w-full ">
+              <img src={item.image} alt="/" className="h-[200px] sm:border-r-2" />
             </figure>
-            <div className="card-body">
+            <div className="card-body ">
               <h2 className="card-title">{item.title}</h2>
               <p>{item.description}</p>
               <div className="card-actions flex justify-between mt-8 gap-4">

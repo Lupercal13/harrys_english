@@ -17,7 +17,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-blue-500" : "text-black"
+              active === nav.title ? "text-purple-700 scale-110 ease-out" : "text-black"
             } ${index === navLinks.length - 1 ? "mr-10" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -34,13 +34,13 @@ const Navbar = () => {
             }} size={20}/>}
         </button>
         
-        <div className={`${toggle ? 'hidden' :'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar bg-slate-200/95`}>
+        <div className={`${toggle ? 'hidden' :'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar bg-slate-200/80`}>
         <ul className="list-none flex justify-end item-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-purple-600 font-semibold" : "text-black"
+                className={`font-poppins font-medium cursor-pointer text-[16px] drop-shadow-lg ${
+                  active === nav.title ? "text-purple-700 font-semibold" : "text-black"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() =>{ setActive(nav.title),setToggle(!toggle)}}
               >

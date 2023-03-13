@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div id='contact' className='font-poppins'>
       <div className='ml-12 mb-12 mt-14'>
-        <h1 className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700 drop-shadow-lg'>Interested?</h1>
+        <h1 className='text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700 drop-shadow-lg'>Interested?</h1>
         <p className='text-sm text-gray-500 tracking-wider drop-shadow-lg'>Sign Up Now to check class availability.</p>
       </div>
 
