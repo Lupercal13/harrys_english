@@ -26,9 +26,9 @@ const Classes = () => {
 
       <div className="mt-20 grid sm:grid-cols-2 font-poppins  ">
         {classes.map((item) => (
-          <div className="card lg:card-side grid sm:grid-cols-2 shadow-xl mb-12 border-2 mx-4 bg-white">
+          <div className="card lg:card-side grid md:grid-cols-2 shadow-xl mb-12 border-2 mx-4 bg-white" key={item.id}>
             <figure className="w-full ">
-              <img src={item.image} alt="/" className="h-[200px] sm:border-r-2" />
+              <img src={item.image} alt="/" className="h-[200px] md:border-r-2" />
             </figure>
             <div className="card-body ">
               <h2 className="card-title">{item.title}</h2>
@@ -38,7 +38,8 @@ const Classes = () => {
                 <p className="flex items-center font-semibold text-primary"><BiYen/>{item.price}</p>
                 <p className="text-primary text-sm font-semibold">{item.date}</p>
                 </div>
-                <button className="btn btn-primary">Sign Up Now</button>
+                <a href="#contact">
+                <button className="btn btn-primary">Sign Up Now</button></a>
               </div>
             </div>
           </div>
