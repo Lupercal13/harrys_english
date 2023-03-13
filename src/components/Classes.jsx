@@ -26,7 +26,7 @@ const Classes = () => {
 
       <div className="mt-20 grid ss:grid-cols-2 font-poppins  ">
         {classes.map((item) => (
-          <div className="card lg:card-side bg-base-100 shadow-xl mb-12 border-2 mx-4">
+          <div className="card lg:card-side  shadow-xl mb-12 border-2 mx-4 bg-white">
             <figure className="lg:w-full">
               <img src={item.image} alt="/" className="h-[200px] lg:h-[225px]" />
             </figure>
