@@ -37,8 +37,8 @@ const Contact = () => {
             name="class"
             select
             defaultValue={""}
-            label="Select"
-            helperText="Select class of interest"
+            label="Select a class"
+
             required
           >
             {classes.map((item) => (
